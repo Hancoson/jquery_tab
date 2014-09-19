@@ -1,4 +1,6 @@
 jquery_tab
 ==========
 
-jQuerty选项卡
+jQuerty tab
+
+demo url:http://www.vso.pw/demo/tab/
