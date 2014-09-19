@@ -6,32 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/style.min.css" charset="UTF-8"/>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jqtab.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	// $.jqtab = function(tabtit,tab_conbox,shijian) {
-	// 	$(tab_conbox).find("li").hide();
-	// 	$(tabtit).find("li:first").addClass("thistab").show(); 
-	// 	$(tab_conbox).find("li:first").show();
-	
-	// 	$(tabtit).find("li").bind(shijian,function(){
-	// 	  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
-	// 		var activeindex = $(tabtit).find("li").index(this);
-	// 		$(tab_conbox).children().eq(activeindex).show().siblings().hide();
-	// 		return false;
-	// 	});
-	
-	// };
-  $.jqtab("#tabs","#tab_conbox","click");
-  
-  $.jqtab("#tabs2","#tab_conbox2","mouseenter");
-
-
-	//Jqtab("#tabs","#tab_conbox","click");//单击切换
-	
-	//var Jqtab=eventTab("#tabs2","#tab_conbox2","mouseenter");//鼠标滑过切换演示
-	
-});
-</script>
 </head>
 <body>
 <div id="tabbox">
@@ -84,9 +58,12 @@ $(document).ready(function() {
         	<p>4 </p>
         </li>
     </ul>
-
-    
 </div>
-</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  $.jqtab("#tabs","#tab_conbox","click"); 
+  $.jqtab("#tabs2","#tab_conbox2","mouseenter");	
+});
+</script>
 </body>
 </html>
