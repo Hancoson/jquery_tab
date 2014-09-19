@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.min.css" charset="UTF-8"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jqtab.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// $.jqtab = function(tabtit,tab_conbox,shijian) {
+	// 	$(tab_conbox).find("li").hide();
+	// 	$(tabtit).find("li:first").addClass("thistab").show(); 
+	// 	$(tab_conbox).find("li:first").show();
+	
+	// 	$(tabtit).find("li").bind(shijian,function(){
+	// 	  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+	// 		var activeindex = $(tabtit).find("li").index(this);
+	// 		$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+	// 		return false;
+	// 	});
+	
+	// };
+  $.jqtab("#tabs","#tab_conbox","click");
+  
+  $.jqtab("#tabs2","#tab_conbox2","mouseenter");
+
+
+	//Jqtab("#tabs","#tab_conbox","click");//单击切换
+	
+	//var Jqtab=eventTab("#tabs2","#tab_conbox2","mouseenter");//鼠标滑过切换演示
+	
+});
+</script>
+</head>
+<body>
+<div id="tabbox">
+	<h1>单击切换演示</h1>
+    <ul class="tabs" id="tabs">
+       <li><a href="#">Tab1</a></li>
+       <li><a href="#">Tab2</a></li>
+       <li><a href="#">Tab3</a></li>
+       <li><a href="#">Tab4</a></li>
+    </ul>
+    <ul class="tab_conbox" id="tab_conbox">
+        <li class="tab_con">
+           <p>1</p>
+        </li>
+            
+        <li class="tab_con">
+        	<p>2 </p>
+        </li>
+    
+        <li class="tab_con">
+        	<p>3 </p>
+        </li>
+    
+        <li class="tab_con">
+        	<p>4 </p>
+        </li>
+    </ul>
+    
+    <h1>鼠标滑过切换演示</h1>
+    <ul class="tabs" id="tabs2">
+       <li><a href="#">Tab1</a></li>
+       <li><a href="#">Tab2</a></li>
+       <li><a href="#">Tab3</a></li>
+       <li><a href="#">Tab4</a></li>
+    </ul>
+    <ul class="tab_conbox" id="tab_conbox2">
+        <li class="tab_con">
+           <p>1</p>
+        </li>
+            
+        <li class="tab_con">
+        	<p>2 </p>
+        </li>
+    
+        <li class="tab_con">
+        	<p>3 </p>
+        </li>
+    
+        <li class="tab_con">
+        	<p>4 </p>
+        </li>
+    </ul>
+
+    
+</div>
+</div>
+</body>
+</html>
